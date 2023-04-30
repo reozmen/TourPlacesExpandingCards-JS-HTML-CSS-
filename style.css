@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+.adiyaman {
+  background-image: url("https://images.pexels.com/photos/9813791/pexels-photo-9813791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+.istanbul {
+  background-image: url("https://images.pexels.com/photos/1549326/pexels-photo-1549326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+.kars {
+  background-image: url("https://images.pexels.com/photos/10593349/pexels-photo-10593349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+.izmir {
+  background-image: url("https://images.pexels.com/photos/2656502/pexels-photo-2656502.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+.bolu {
+  background-image: url("https://images.pexels.com/photos/15584434/pexels-photo-15584434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
 body {
   font-family: "Inter", sans-serif;
   display: flex;
