@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Inter:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  margin: 0;
+  overflow: hidden;
+}
+
+.imagesContainer {
+  margin-top: 3rem;
+  display: flex;
+  width: 90vw;
+}
+
+.imageDiv {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  border-radius: 50px;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.imageDiv h3 {
+  font-size: 24px;
+  margin: 0px;
+  background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 50px 50px 0px 0px;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+
+.imageDiv.active {
+  flex: 5;
+}
+
+.imageDiv.active h3 {
+  display: block;
+  font-size: 24px;
+  transition: all 0.7s ease-in;
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow: auto;
+  }
+  .imagesContainer {
+    display: block;
+    margin-top: 0rem;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .imageDiv {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 8vh;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    transition: all 0.7s ease-in;
+  }
+
+  .imageDiv h3 {
+    font-size: 16px;
+    margin: 0px;
+    background-color: rgba(220, 220, 220, 0.5);
+    border-radius: 50px 50px 0px 0px;
+    padding: 10px;
+    text-align: center;
+    display: none;
+  }
+
+  .imageDiv.active {
+    height: 60vh;
+  }
+
+  .imageDiv.active h3 {
+    display: block;
+    font-size: 16px;
+    transition: all 0.7s ease-in;
+  }
+}
